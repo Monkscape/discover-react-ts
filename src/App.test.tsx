@@ -4,6 +4,10 @@ import App from './App';
 
 test('renders learn react link', () => {
   const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
+  const linkElement = getByText(/Payees/i);
   expect(linkElement).toBeInTheDocument();
 });
+
+test('basic math', () => {
+  expect(2+2).toBe(4)
+})
